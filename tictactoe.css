@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Mr Dafoe", cursive;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+button {
+    border-radius: 5px;
+    padding: 0 10px 10px;
+
+&:hover {
+     background-color: rgb(240, 240, 240);
+     cursor: pointer;
+ }
+}
+
+.tictactoe td {
+    border: 2px solid rgb(0, 0, 0);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+
+tr {
+    &:first-child {
+    td {
+    border-top: none;
+}
+}
+
+&:last-child {
+td {
+    border-bottom: none;
+}
+}
+
+td {
+&:first-child {
+     border-left: none;
+ }
+
+&:last-child {
+     border-right: none;
+ }
+}
+}
+}
+
+.endgame {
+    display: none;
+    width: 225px;
+    margin: -310px auto auto;
+    background-color: rgba(24, 168, 224, 0.85);
+    padding: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+}
+
+.text,
+button {
+    font-family: "Aref Ruqaa", serif;
+}
+
+#board {
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 300px;
+    margin: 15px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
